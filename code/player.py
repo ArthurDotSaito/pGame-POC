@@ -15,9 +15,9 @@ class Player(pygame.sprite.Sprite):
         keys = pygame.key.get_pressed()
 
         if keys [pygame.K_UP]:
-            self.direction.y = 1
-        elif keys [pygame.K_DOWN]:
             self.direction.y = -1
+        elif keys [pygame.K_DOWN]:
+            self.direction.y = 1
         else:
             self.direction.y = 0
 
