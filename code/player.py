@@ -36,6 +36,8 @@ class Player(pygame.sprite.Sprite):
 
         self.rect.x += self.direction.x * speed
         self.rect.y += self.direction.y * speed
+        self.collision('horizontal')
+        self.collision('vertical')
 
     def collision(self, direction):
         if direction == 'horizontal':
