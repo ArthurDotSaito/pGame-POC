@@ -28,6 +28,5 @@ class Level:
 
 
     def run(self):
-        self.visible_sprites.drawSprites()
+        self.visible_sprites.drawSprites(self.player)
         self.visible_sprites.update()
-        debug(self.player.direction)
