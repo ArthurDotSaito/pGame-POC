@@ -3,6 +3,7 @@ from settings import *
 from tile import Tile
 from player import Player
 from debug import *
+from camera import *
 
 class Level:
     def __init__(self):
@@ -10,7 +11,7 @@ class Level:
         self.display_surface = pygame.display.get_surface()
 
         #sprite groups - visible and obstacles
-        self.visible_sprites = pygame.sprite.Group()
+        self.visible_sprites = YSortCameraGroup()
         self.obstacles_sprites = pygame.sprite.Group()
 
         self.create_map()

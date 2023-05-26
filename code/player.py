@@ -56,7 +56,6 @@ class Player(pygame.sprite.Sprite):
                     if self.direction.y < 0: #moving up
                         self.rect.top = sprite.rect.bottom
 
-
     def update(self):
         self.keyBoardInput()
         self.movement(self.speed)
